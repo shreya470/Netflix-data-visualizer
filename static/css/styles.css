@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+svg {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.line {
+    fill: none;
+    stroke-width: 2px;
+}
+
+.movie-line {
+    stroke: steelblue;
+}
+
+.tv-line {
+    stroke: orange;
+}
+
+.axis path, .axis line {
+    fill: none;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-size: 12px;
+}
+
+#imdb-chart {
+    width: 50%;  /* Allow the chart container to take full width */
+    height: 500px;  /* Fixed height for consistent appearance */
+    overflow: auto;  /* Enable both vertical and horizontal scrolling */
+    position: relative;  /* Allow proper positioning of the SVG */
+         /* Ensures block-level behavior */
+}
+
+
+#imdb-chart svg {
+    width: auto;  /* Adjust width of SVG based on the number of bars */
+    height: 100%;  /* Maintain consistent height for the SVG */
+      /* Ensure the SVG takes full width initially */
+    display: block;
+}
+
+.bar {
+    transition: all 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+.bar:hover {
+    fill: #ff7f0e;  /* Highlight bars on hover */
+}
+
+
