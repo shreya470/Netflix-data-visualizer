@@ -34,7 +34,7 @@ fetch('/runtime-data')
 
 
 
-// Line Chart Drawing Function
+// Number of Titles per Release Year Breakdown per type
 function drawLineChart(data) {
     // Clear existing chart (if any)
     d3.select("#line-chart").html("");
